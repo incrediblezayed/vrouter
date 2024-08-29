@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:vrouter/src/core/route.dart';
 import 'package:vrouter/src/core/vredirector.dart';
@@ -6,7 +5,7 @@ import 'package:vrouter/src/core/vredirector.dart';
 /// [VRouteElement] is the base class for any object used in routes, stackedRoutes
 /// or nestedRoutes
 @immutable
-abstract class VRouteElement {
+mixin VRouteElement {
   /// [buildRoute] must return [VRoute] if it constitute (which its subroutes or not) a valid
   /// route given the input parameters
   /// [VRoute] should describe this valid route

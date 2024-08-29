@@ -11,7 +11,7 @@ import 'package:vrouter/src/vrouter_core.dart';
 ///   - Computing attributes [pathRegExp], [aliasesRegExp], [pathParametersKeys] and [aliasesPathParametersKeys]
 ///   - implementing a default [buildRoute] and [getPathFromName] methods for them
 @immutable
-class VPath extends VRouteElement with VoidVGuard, VoidVPopHandler {
+class VPath with VRouteElement, VoidVGuard, VoidVPopHandler {
   /// The path (relative or absolute) or this [VRouteElement]
   ///
   /// If the path of a subroute is exactly matched, this will be used in
@@ -221,6 +221,7 @@ class VPath extends VRouteElement with VoidVGuard, VoidVPopHandler {
       );
       if (childVRoute != null) return childVRoute;
     }
+    return null;
   }
 
   // /// Try to form a [VRoute] where this [VRouteElement] is the last [VRouteElement]

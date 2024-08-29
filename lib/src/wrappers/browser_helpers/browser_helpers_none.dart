@@ -34,8 +34,8 @@ class BrowserHelpers {
     String url, {
     required bool openNewTab,
   }) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
     } else {
       throw Exception('Could not launch $url');
     }

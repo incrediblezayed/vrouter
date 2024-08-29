@@ -5,8 +5,7 @@ import 'package:vrouter/src/vrouter_core.dart';
 
 /// A [VRouteElement] which allows you to intercept and react to pop events
 /// See [onPop] and [onSystemPop] for more detailed explanations
-class VPopHandler extends VRouteElement
-    with VRouteElementSingleSubRoute, VoidVGuard {
+class VPopHandler with VRouteElement, VRouteElementSingleSubRoute, VoidVGuard {
   VPopHandler({
     Future<void> Function(VRedirector vRedirector) onPop =
         VoidVPopHandler.voidOnPop,

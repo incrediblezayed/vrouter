@@ -7,5 +7,9 @@ import 'package:vrouter/src/vrouter_core.dart';
 /// [VRouteElement] is the base class for any object used in routes, stackedRoutes
 /// or nestedRoutes
 @immutable
-abstract class VRouteElementBuilder extends VRouteElement
-    with VRouteElementSingleSubRoute, VoidVPopHandler, VoidVGuard {}
+abstract class VRouteElementBuilder
+    with
+        VRouteElement,
+        VRouteElementSingleSubRoute,
+        VoidVPopHandler,
+        VoidVGuard {}

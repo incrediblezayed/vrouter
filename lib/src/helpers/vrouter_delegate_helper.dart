@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 /// A routerDelegate which automatically creates a Navigator
 /// See the details of each attribute to see what they can be used for
@@ -27,7 +26,7 @@ class VRouterDelegateHelper<T extends Object> extends RouterDelegate<T>
       return Navigator(
         key: navigatorKey,
         observers: observers ?? [],
-        pages: pages!,
+        pages: pages!,   
         onPopPage: onPopPage,
       );
     }

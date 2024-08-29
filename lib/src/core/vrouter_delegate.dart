@@ -1652,8 +1652,8 @@ class VRouterDelegate extends RouterDelegate<RouteInformation>
   /// Navigation state to app state
   @override
   Future<void> setNewRoutePath(RouteInformation routeInformation) async {
-    if (routeInformation.location != null && !_ignoreNextBrowserCalls) {
-      final newUrl = routeInformation.location!;
+    if (!_ignoreNextBrowserCalls) {
+      final newUrl = routeInformation.location;
 
       final routeState = routeInformation.state as Map<String, dynamic>?;
 

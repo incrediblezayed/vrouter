@@ -11,8 +11,8 @@ import 'package:vrouter/src/vrouter_widgets.dart';
 
 /// A [VRouteElement] similar to [VNester] but which allows you to specify your own page
 /// thanks to [pageBuilder]
-class VNesterPageBase extends VRouteElement
-    with VoidVGuard, VoidVPopHandler, VRouteElementWithName {
+class VNesterPageBase
+    with VRouteElement, VoidVGuard, VoidVPopHandler, VRouteElementWithName {
   /// A list of [VRouteElement] which widget will be accessible in [widgetBuilder]
   final List<VRouteElement> nestedRoutes;
 

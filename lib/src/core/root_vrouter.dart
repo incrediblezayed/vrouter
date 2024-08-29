@@ -3,7 +3,7 @@ import 'package:vrouter/src/vrouter_vroute_elements.dart';
 import 'package:vrouter/src/core/vroute_element.dart';
 import 'package:vrouter/src/core/vredirector.dart';
 
-class RootVRouter extends VRouteElement with VRouteElementSingleSubRoute {
+class RootVRouter with VRouteElement, VRouteElementSingleSubRoute {
   final List<VRouteElement> routes;
 
   RootVRouter({
