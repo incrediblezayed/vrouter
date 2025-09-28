@@ -180,7 +180,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "925b48fd917dc8282b83341b05b14feb0b5331ad"
+      resolved-ref: fa01d9cd4e3bf516c53f9b1fb9215b8b645e19d9
       url: "https://github.com/incrediblezayed/move_to_background"
     source: git
     version: "1.0.2"
